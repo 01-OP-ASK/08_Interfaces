@@ -12,6 +12,7 @@ public class App {
         pollObj(queen);
         pollObj(worker);
         pollObj(drone);
+        output("-----------------------");
         pollObj(bird);
 
     }
@@ -19,6 +20,11 @@ public class App {
    // 2. Variante - Polymorphie
     private static void pollObj(HoneyBee obj) {
         output(obj.doYourJob());
+        output(obj.fly());
+    }
+    
+    private static void pollObj(Bird obj) {
+        output(obj.hasFeathers());
         output(obj.fly());
     }
 
